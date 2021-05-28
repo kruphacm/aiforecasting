@@ -350,9 +350,9 @@ function showDivs(n) {
         <a class="right" onclick="plusDivs(1)" style="padding-right: 5%; float: right; padding-top: -15; font-size: 150%;">❯</a>
         <div><img class="mySlides1" src="https://www.log-hub.com/wp-content/uploads/2017/12/forecating_process.png" width='90%;' ></div>
          
-       <div class='id1'><img class="mySlides" src="FORECAST1.png"  width='90%'></div>
-       <div class='id2'><img class="mySlides"  src="FORECAST2.png" width='90%'></div>
-      <div class='id3'> <img class="mySlides"  src="FORECAST3.png"width='90%'></div>     
+       <div class='id1'><img class="mySlides" src="https://raw.githubusercontent.com/kruphacm/mini-project/main/FORECAST1.png"  width='90%'></div>
+       <div class='id2'><img class="mySlides"  src="https://raw.githubusercontent.com/kruphacm/mini-project/main/FORECAST2.png" width='90%'></div>
+      <div class='id3'> <img class="mySlides"  src="https://raw.githubusercontent.com/kruphacm/mini-project/main/FORECAST3.png"width='90%'></div>     
    
    
 </div><br><br>
@@ -366,8 +366,8 @@ function showDivs(n) {
      </div>
     <div  style="background-color: #333;padding-left: 45%">
     <br><br>
-        <input type="button" id="create_pdf" value="GENERATE PDF" >   <br><br></div> 
-    <br><br>
+        <input type="button" id="create_pdf" value="GENERATE PDF" > <br><br><br>  <br><br></div> 
+    <br><br><br>
     <div style="background-color: #333;padding: 10%; color:white;">
       <form action="{{ url_for('predict')}}"method="post" style='color: white;  text-align:center; font-size: 150%;'>
           <p >the Date Startes from 01-01-2021 to 30-04-2021</p>
@@ -381,15 +381,14 @@ function showDivs(n) {
   <option value="BLOOD PRESSURE">BLOOD PRESSURE</option>
   <option value="TEMPERATURE">TEMPERATURE</option>
   <option value="ALL">ALL THE ABOVE</option>
-</select><br><br>
+</select><br><br><br><br><br>
         <button type="submit" class="btn btn-primary btn-block btn-large" style='background-color:lightsalmon; color: white; font-size: 100%; padding: 1%;'>&nbsp&nbsp &nbsp SHOW GRAPH&nbsp&nbsp &nbsp  </button><br><br>
     </form>
     </div>
     <div style='color: white; background-color: #333;text-align: center; font-size: 150%;'>
          <br><br>
      <p>GRAPH</p>
-
-        div style="background-color: #333;padding-left: 10%;padding-right: 10%; ">
+ <div style="background-color: #333;padding-left: 10%;padding-right: 10%; ">
         <div><div style="padding-left: 7%; background: white;">''' + plt_html + '''</div></div><br><br>
      <div style="background-color: white;">
      <p style="color:red; ">NOTE: this can be used only once so click the button below  to view the graph again</p></div></div><br><br>

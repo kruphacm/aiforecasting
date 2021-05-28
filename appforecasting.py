@@ -118,30 +118,31 @@ def predict():
         xpoints = np.array(df['DATE'][I1:I2])
         ypoints = np.array(df['BLOOD OXYGEN LEVEL'][I1:I2])
         figure= plt.figure()
-
+        figure.set_figwidth(10)
+        figure.set_figheight(10)
         plt.plot(xpoints, ypoints)
         plt.xlabel("Date")
         plt.ylabel("Blood Oxygen")
         plt.legend(['Blood Oxygen'])
-        figure.savefig('/static/images/new_plot.png')
     elif(int_features[2]=='BLOOD PRESSURE'):
         xpoints = np.array(df['DATE'][I1:I2])
         ypoints = np.array(df['SYSTOLIC'][I1:I2])
         xpoints1 = np.array(df['DATE'][I1:I2])
         ypoints1 = np.array(df['DIASTOLIC'][I1:I2])
         figure= plt.figure()
-
+        figure.set_figwidth(10)
+        figure.set_figheight(10)
         plt.plot(xpoints, ypoints)
         plt.plot(xpoints1, ypoints1)
         plt.legend(['systolic','diastolic'])
         plt.xlabel("Date")
         plt.ylabel("Blood Pressure")
-        figure.savefig('/static/images/new_plot.png')
     elif (int_features[2]=='TEMPERATURE'):
         xpoints = np.array(df['DATE'][I1:I2])
         ypoints = np.array(df['TEMPERATURE'][I1:I2])
         figure= plt.figure()
-
+        figure.set_figwidth(10)
+        figure.set_figheight(10)
         plt.plot(xpoints, ypoints)
         plt.xlabel("Date")
         plt.ylabel("temperature")
@@ -169,8 +170,7 @@ def predict():
         axis[1,0].plot(xpoints3, ypoints3)        
         axis[1,0].legend(['systolic','diastolic'])      
         axis[1,1].plot(xpoints4, ypoints4)
-        axis[1,1].legend(['Temperature'])
-        figure.savefig('new_plot.png')  
+        axis[1,1].legend(['Temperature'])  
     plt_html = mpld3.fig_to_html(figure)
 
     return '''<!DOCTYPE html>

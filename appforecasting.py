@@ -211,8 +211,8 @@ def predict():
     }
         body
         {
-            background-color:rgba(	255, 159, 88);
-            filter: brightness(85%)
+            background-image: url('https://thumbs.gfycat.com/AmazingSpecificAndalusianhorse-size_restricted.gif');      
+            background-blend-mode: darken(70%);
         }
 .navbar,.navbar1,.desc{
   overflow: hidden;
@@ -223,7 +223,7 @@ def predict():
 .navbar a {
   float: left;
   font-size: 16px;
-  color: white;
+  color: rgb(30,144,255);
   text-align: center;
    padding: 14px 16px;
   text-decoration: none;
@@ -241,11 +241,11 @@ img
         font-size: 150%;
     }
 .navbar{
-    background-color: #555;
-
-        color: white;
-        font-size: auto;
-        font-size: 80%;
+   background-image: url('https://image.freepik.com/free-photo/shades-blue-white-background_23-2147746645.jpg');
+    background-color: rgba(0,0,0, 0.3);
+    background-blend-mode: darken;
+    color: white;
+    font-size: 100%;
     font-style: italic;
     font-family:cursive;
         padding-left: 2%;
@@ -253,14 +253,14 @@ img
     }
 div.scrollmenu {
     padding-top: 1%;
-  background-color: #333;
+ 
   overflow: auto;
   white-space: nowrap;
 }
 
 div.scrollmenu a {
   display: inline-block;
-  color: white;
+  color: rgb(30,144,255);
   text-align: center;
   padding: 14px;
   text-decoration: none;
@@ -268,13 +268,13 @@ div.scrollmenu a {
 }
 
 div.scrollmenu a:hover {
-  background-color: #777;
+  background-color: rgb(135,206,235);
 }
 .scrollmenu {
   background-color: #eee;
   width: 100%;
   height: 100%;
-  border: 1px dotted black;
+  
   overflow-y: scroll; /* Add the ability to scroll */
 }
 
@@ -328,7 +328,8 @@ function showDivs(n) {
             console.log(invoice);
             console.log(window);
             var opt = {
-                margin: 1,filename: 'myreport.pdf',
+                margin: 1,
+                filename: 'myreport.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
                 html2canvas: { scale: 2 },
                 jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
@@ -343,24 +344,23 @@ function showDivs(n) {
     <div></div>
     <p style="font-size: 140%"><img class="cropped1" src="https://drive.google.com/thumbnail?id=1JQ6epr36ugrVF7cuTlYMw9kL7J-pZrfd" width=5%; height="5%;">&nbsp HEALTH COMPANION</p></div>
     <div class="scrollmenu">
-             <a href="#home" >HOME</a>
-             <a href="#news" >BLOG</a>
-            <a href='Consulting%20doctors.html' >CONSULTING</a>
-             <a href='' >CHECK MY HEALTH</a>
+             <a href="homepage.html" >HOME</a>
+             <a href='Consulting%20doctors.html' >CONSULTING</a>
+             <a href='https://aiforecasting.herokuapp.com/' >CHECK MY HEALTH</a>
              <a href="AI%20predictions.html" >AI PREDICTIONS</a>
              <a href="Hospital.html">HOSPITAL CONSULTING</a>      
-             <a href="" >SCAN CENTRE AND HOSPITALS</a>
-                 <a href="HealthyTips.html">HEALTH TIPS</a>
-                 <a href="food1-1.html">FOOD INFO</a>
-                  <a href="Disease%20information.html">DISEASE INFO</a>
+             <a href="HealthyTips.html">HEALTH TIPS</a>
+             <a href="food1-1.html">FOOD INFO</a>
+             <a href="Disease%20information.html">DISEASE INFO</a>
              </div>
   <br>
   <br>
   <br>
 
-    <div class="w3-content w3-section" style='background-color: #333; color: white;' >
+    <div class="w3-content w3-section" style='background-image: url(https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg?size=626&ext=jpg);background-repeat: no-repeat;background-size: cover;background-color: rgba(0,0,0, 0.6);
+    background-blend-mode: darken;color: white;'>
         <br><br>
-       <p style="text-align: center;">CLICK RIGHT ARROW TO SEE THE STEPS</p>
+        <p style="text-align: center;font-family: cursive;"><b>CLICK RIGHT ARROW TO SEE THE STEPS</b></p>
          <!-- Navigation arrows -->  
         <a class="left" onclick="plusDivs(-1)" style="padding-left: 5%;  padding-top: -15; font-size: 150%;"><b>❮</b></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         <a class="right" onclick="plusDivs(1)" style="padding-right: 5%; float: right; padding-top: -15; font-size: 150%;">❯</a>
@@ -371,12 +371,13 @@ function showDivs(n) {
       <div class='id3'> <img class="mySlides"  src="https://raw.githubusercontent.com/kruphacm/mini-project/main/FORECAST3.png"width='90%'></div>     
    
    
-</div><br><br>
-    <div class='form' style='color: black; background-color: #333;padding: 10%; '>
+</div><br><br><br><br>
+    <div class='form' style='color: black; background-image:url(https://techchannel.com/getattachment/1c269c15-8656-4e8a-909a-71358ccc76d3/techu-talks.jpg);background-repeat: no-repeat;background-size: cover;background-color: rgba(0,0,0, 0.4);
+    background-blend-mode: darken;padding: 10%; '>
+        <h2 STYLE="text-align: center;color: white;">REPORT</h2>
          <br><br>
 
-        <div style='padding-left:5%; padding-right: 20%; font-size: 150%;background-color: white;' id="report">
-        '''+output+'''
+        <div style='padding-left:5%; padding-right: 20%; font-size: 150%;background-color: white;' id="report">'''+output+'''
          <br>
          <br></div>
      </div>

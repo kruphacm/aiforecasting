@@ -377,16 +377,18 @@ function showDivs(n) {
         <h2 STYLE="text-align: center;color: white;">REPORT</h2>
          <br><br>
 
-        <div style='padding-left:5%; padding-right: 20%; font-size: 150%;background-color: white;' id="report">'''+output+'''
-         <br>
+        <div style='padding-left:5%; padding-right: 20%; font-size: 150%;background-color: white;' id="report">'''+output+'''<br>
          <br></div>
-     </div>
-    <div  style="background-color: #333;padding-left: 45%">
+      <br><br>
+      <br><br>
+    <div  style="padding-left: 45%">
     <br><br>
-        <input type="button" id="create_pdf" value="GENERATE PDF" > <br><br><br>  <br><br></div> 
+        <input type="button" id="create_pdf" value="GENERATE PDF" > <br><br><br>  <br><br></div> </div>
     <br><br><br>
-    <div style="background-color: #333;padding: 10%; color:white;">
+    <div style="background-image:url(https://www.wallpaperbetter.com/wallpaper/291/641/316/blue-shades-2K-wallpaper.jpg);background-repeat: no-repeat;background-size: cover;background-color: rgba(0,0,0, 0.4);
+    background-blend-mode: darken;  padding: 10%; color:white;">
       <form action="{{ url_for('predict')}}"method="post" style='color: white;  text-align:center; font-size: 150%;'>
+          <h1>GRAPH REPRESENTATION</h1>
           <p >the Date Startes from 01-01-2021 to 30-04-2021</p>
           <p style="color: red;">enter the starting date and ending date within 20 days limit.</p><br><br>
         <p>Enter Starting Date:<input type="text" name="Enter the Starting Date" placeholder="Enter the Starting Date" required="required" /></p><br><br>
@@ -402,11 +404,14 @@ function showDivs(n) {
         <button type="submit" class="btn btn-primary btn-block btn-large" style='background-color:lightsalmon; color: white; font-size: 100%; padding: 1%;'>&nbsp&nbsp &nbsp SHOW GRAPH&nbsp&nbsp &nbsp  </button><br><br>
     </form>
     </div>
-    <div style='color: white; background-color: #333;text-align: center; font-size: 150%;'>
+    <br><br>
+    <br><br>
+    <div style='color: white; background-image: url(https://images.unsplash.com/photo-1568301956237-25a54f5f0d21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8&w=1000&q=80); text-align: center;background-repeat: no-repeat;background-size: cover;background-color: rgba(0,0,0, 0.4);
+    background-blend-mode: darken; font-size: 150%;'>
          <br><br>
      <p>GRAPH</p>
- <div style="background-color: #333;padding-left: 10%;padding-right: 10%; ">
-        <div><div style="padding-left: 7%; background: white;">''' + plt_html + '''</div></div><br><br>
+ <div style="padding-left: 10%;padding-right: 10%; ">
+        <div><div style="padding-left: 7%; background: white;">''' +plt_html+ '''</div></div><br><br>
      <div style="background-color: white;">
      <p style="color:red; ">NOTE: this can be used only once so click the button below  to view the graph again</p></div></div><br><br>
         <a href="https://aiforecasting.herokuapp.com/" style="color:white; background-color:lightsalmon;padding: 2%;text-decoration: none;">CLICK HERE</a><br><br><br>

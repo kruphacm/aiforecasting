@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html >
+<head>
+   <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="html2pdf.bundle.min.js"></script>
+
+  <title>AI Predictions</title>
+  
+</head>
+    <style>
+    body::-webkit-scrollbar
+    {
+        display:none;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;
+        
+    }
+        body
+        {
+            background-image: url('https://thumbs.gfycat.com/AmazingSpecificAndalusianhorse-size_restricted.gif');      
+            background-blend-mode: darken(70%);
+        }
+.navbar,.navbar1,.desc{
+  overflow: hidden;
+
+  font-family: sans-serif,monospace;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: rgb(30,144,255);
+  text-align: center;
+   padding: 14px 16px;
+  text-decoration: none;
+}
+img
+    {
+        padding-left: 4%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+.cropped1
+    {
+           padding-left: 2%;
+        vertical-align: middle;
+        font-size: 150%;
+    }
+.navbar{
+   background-image: url('https://image.freepik.com/free-photo/shades-blue-white-background_23-2147746645.jpg');
+    background-color: rgba(0,0,0, 0.3);
+    background-blend-mode: darken;
+    color: white;
+    font-size: 100%;
+    font-style: italic;
+    font-family:cursive;
+        padding-left: 2%;
+ 
+    }
+div.scrollmenu {
+    padding-top: 1%;
+ 
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: rgb(30,144,255);
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+    font-family: cursive,monospace;
+}
+
+div.scrollmenu a:hover {
+  background-color: rgb(135,206,235);
+}
+.scrollmenu {
+  background-color: #eee;
+  width: 100%;
+  height: 100%;
+  
+  overflow-y: scroll; /* Add the ability to scroll */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollmenu::-webkit-scrollbar {
+    width: 2%;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollmenu {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: 2%;  /* Firefox */
+}
+        .mySlides
+        {
+            display: none;
+        }
+    </style>
+  
+<script>
+var slideIndex = 0;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+    
+  var x = document.getElementsByClassName("mySlides");
+  var y = document.getElementsByClassName("mySlides1");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < y.length; i++) {
+    y[i].style.display = "none";  
+  }    
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <script>
+        
+        window.onload = function () {
+    document.getElementById("create_pdf")
+        .addEventListener("click", () => {
+            const invoice = this.document.getElementById("report");
+            console.log(invoice);
+            console.log(window);
+            var opt = {
+                margin: 1,
+                filename: 'myreport.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+            html2pdf().from(invoice).set(opt).save();
+        })
+}
+    </script>
+<body>
+<div class='navbar' id='title'>
+    <p style="font-size: 140%"><img class="cropped1" src="https://drive.google.com/thumbnail?id=1JQ6epr36ugrVF7cuTlYMw9kL7J-pZrfd" width=5%; height="5%;">&nbsp HEALTH COMPANION</p></div>
+    <div class="scrollmenu">
+             <a href="https://kruphacm.github.io/health-improviser-and-monitoring-system/" >HOME</a>
+             <a href='https://kruphacm.github.io/health-improviser-and-monitoring-system/Consulting%20doctors.html' >CONSULTING</a>
+             <a href='https://aiforecasting.herokuapp.com/' >CHECK MY HEALTH</a>
+             <a href="https://kruphacm.github.io/health-improviser-and-monitoring-system/AI%20predictions.html" >AI PREDICTIONS</a>
+             <a href="https://kruphacm.github.io/health-improviser-and-monitoring-system/Hospital.html">HOSPITAL CONSULTING</a>      
+             <a href="https://kruphacm.github.io/health-improviser-and-monitoring-system/HealthyTips.html">HEALTH TIPS</a>
+             <a href="https://kruphacm.github.io/health-improviser-and-monitoring-system/food1-1.html">FOOD INFO</a>
+             <a href="https://kruphacm.github.io/health-improviser-and-monitoring-system/Disease%20information.html">DISEASE INFO</a>
+             </div>
+  <br>
+  <br>
+  <br>
+
+    <div class="w3-content w3-section" style='background-image: url(https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg?size=626&ext=jpg);background-repeat: no-repeat;background-size: cover;background-color: rgba(0,0,0, 0.6);
+    background-blend-mode: darken;color: white;'>
+        <br><br>
+        <p style="text-align: center;font-family: cursive;"><b>CLICK RIGHT ARROW TO SEE THE STEPS</b></p>
+         <!-- Navigation arrows -->  
+        <a class="left" onclick="plusDivs(-1)" style="padding-left: 5%;  padding-top: -15; font-size: 150%;"><b>❮</b></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <a class="right" onclick="plusDivs(1)" style="padding-right: 5%; float: right; padding-top: -15; font-size: 150%;">❯</a>
+        <div><img class="mySlides1" src="https://www.log-hub.com/wp-content/uploads/2017/12/forecating_process.png" width='90%;' ></div>
+         
+       <div class='id1'><img class="mySlides" src="https://raw.githubusercontent.com/kruphacm/mini-project/main/FORECAST1.png"  width='90%'></div>
+       <div class='id2'><img class="mySlides"  src="https://raw.githubusercontent.com/kruphacm/mini-project/main/FORECAST2.png" width='90%'></div>
+      <div class='id3'> <img class="mySlides"  src="https://raw.githubusercontent.com/kruphacm/mini-project/main/FORECAST3.png"width='90%'></div>     
+   
+   
+</div><br><br><br><br>
+    <div class='form' style='color: black; background-image:url(https://techchannel.com/getattachment/1c269c15-8656-4e8a-909a-71358ccc76d3/techu-talks.jpg);background-repeat: no-repeat;background-size: cover;background-color: rgba(0,0,0, 0.4);
+    background-blend-mode: darken;padding: 10%; '>
+        <h2 STYLE="text-align: center;color: white;">REPORT</h2>
+         <br><br>
+
+        <div style='padding-left:5%; padding-right: 20%; font-size: 150%;background-color: white;' id="report">
+            
+     {{ prediction_text }}
+         <br>
+         <br></div>
+      <br><br>
+      <br><br>
+    <div  style="padding-left: 45%">
+    <br><br>
+        <input type="button" id="create_pdf" value="GENERATE PDF" > <br><br><br>  <br><br></div> </div>
+    <br><br><br>
+    <div style="background-image:url(https://www.wallpaperbetter.com/wallpaper/291/641/316/blue-shades-2K-wallpaper.jpg);background-repeat: no-repeat;background-size: cover;background-color: rgba(0,0,0, 0.4);
+    background-blend-mode: darken;  padding: 10%; color:white;">
+      <form action="{{ url_for('predict')}}"method="post" style='color: white;  text-align:center; font-size: 150%;'>
+          <h1>GRAPH REPRESENTATION</h1>
+          <p >the Date Startes from 01-01-2021 to 30-04-2021</p>
+          <p style="color: red;">enter the starting date and ending date within 20 days limit.</p><br><br>
+        <p>Enter Starting Date:<input type="text" name="Enter the Starting Date" placeholder="Enter the Starting Date" required="required" /></p><br><br>
+        <p>Enter the Ending Date:<input type="text" name="Enter the Ending Date" placeholder="Enter the Ending Date" required="required" /></p><br><br>
+          <label for="cars">Choose a parameter:</label>
+          <select id="cars" name="cars">
+  <option value="HEART BEAT">HEART BEAT</option>
+  <option value="BLOOD OXYGEN">BLOOD OXYGEN</option>
+  <option value="BLOOD PRESSURE">BLOOD PRESSURE</option>
+  <option value="TEMPERATURE">TEMPERATURE</option>
+  <option value="ALL">ALL THE ABOVE</option>
+</select><br><br><br><br><br>
+        <button type="submit" class="btn btn-primary btn-block btn-large" style='background-color:lightsalmon; color: white; font-size: 100%; padding: 1%;'>&nbsp&nbsp &nbsp SHOW GRAPH&nbsp&nbsp &nbsp  </button><br><br>
+    </form>
+    </div>
+    <br><br>
+    <br><br>
+    <div style='color: white; background-image: url(https://images.unsplash.com/photo-1568301956237-25a54f5f0d21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8&w=1000&q=80); text-align: center;background-repeat: no-repeat;background-size: cover;background-color: rgba(0,0,0, 0.4);
+    background-blend-mode: darken; font-size: 150%;'>
+         <br><br>
+     <p>GRAPH</p>
+ <div style="padding-left: 10%;padding-right: 10%; ">
+        <div><div style="padding-left: 7%; background: white;"></div></div><br><br>
+     <div style="background-color: white;">
+     <p style="color:red; ">NOTE: this can be used only once so click the button below  to view the graph again</p></div></div><br><br>
+        <a href="https://aiforecasting.herokuapp.com/" style="color:white; background-color:lightsalmon;padding: 2%;text-decoration: none;">CLICK HERE</a><br><br><br>
+         <br>
+         <br>
+     </div>
+    <br><br>
+    <div style="background-image: url('https://image.freepik.com/free-photo/shades-blue-white-background_23-2147746645.jpg');background-color: rgba(0,0,0, 0.6);background-blend-mode: darken;color: white;font-size: 100%;font-style: italic;font-family:cursive;"><br>
+        <p style="padding-left: 5%;">Contact<br>Mobile:1234567891<br>Email:abcd123@gmail.com</p>
+        <p style="padding-left: 5%; ">Follow us on<img src="https://www.beachrealtync.com/sites/default/files/uploads/socials_3.png" width=10% style="padding-left: 2%;
+        vertical-align: middle" ></p><br>
+    </div>
+    </body>
+</html>

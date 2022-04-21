@@ -96,7 +96,7 @@ def home():
 @app.route('/predict',methods=['POST'])
 def predict():
     output=home1()
-    df=pd.read_csv("https://raw.githubusercontent.com/kruphacm/mini-project/main/forecasting%20data.csv")
+    df=pd.read_csv("https://raw.githubusercontent.com/kruphacm/mini-project/main/forecasting%20dataset.csv")
     df['BLOOD PRESSURE']=df['BLOOD PRESSURE'].str.split("/")
     df['SYSTOLIC']=df['BLOOD PRESSURE'].str[0]
     df['DIASTOLIC']=df['BLOOD PRESSURE'].str[1]
@@ -428,7 +428,7 @@ function showDivs(n) {
 </html>'''
     
 def home1():
-    df=pd.read_csv("https://raw.githubusercontent.com/kruphacm/mini-project/main/forecasting%20data.csv")
+    df=pd.read_csv("https://raw.githubusercontent.com/kruphacm/mini-project/main/forecasting%20dataset.csv")
     df['BLOOD PRESSURE']=df['BLOOD PRESSURE'].str.split("/")
     df['SYSTOLIC']=df['BLOOD PRESSURE'].str[0]
     df['DIASTOLIC']=df['BLOOD PRESSURE'].str[1]
@@ -499,15 +499,5 @@ def home1():
 
 
     return output 
-
-@app.route('/results',methods=['POST'])
-def results():
-
-    data = request.get_json(force=True)
-    prediction = model.predict([np.array(list(data.values()))])
-
-    output = prediction[0]
-    return jsonify(output)
-
 if __name__ == "__main__":
     app.run(debug=True)

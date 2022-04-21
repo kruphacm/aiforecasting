@@ -20,7 +20,7 @@ model5 = pickle.load(open('modeltemperature.pkl', 'rb'))
 
 @app.route('/')
 def home():
-    df=pd.read_csv("https://raw.githubusercontent.com/kruphacm/mini-project/main/forecasting%20data.csv")
+    df=pd.read_csv("https://raw.githubusercontent.com/kruphacm/mini-project/main/forecasting%20dataset.csv")
     df['BLOOD PRESSURE']=df['BLOOD PRESSURE'].str.split("/")
     df['SYSTOLIC']=df['BLOOD PRESSURE'].str[0]
     df['DIASTOLIC']=df['BLOOD PRESSURE'].str[1]
@@ -43,7 +43,7 @@ def home():
     diastolic=orgdia[4][:orgdia[4].rfind("\n")] 
     b=model4.predict([[diastolic,diastolic]])
     #blood oxygen
-    orgbo=list(str(df['BLOOD OXYGEN LEVEL'].tail(1)).strip().split(" "))
+    orgbo=list(str(df['OXYGEN LEVEL'].tail(1)).strip().split(" "))
     bloodoxygen=orgbo[4][:orgbo[4].rfind("\n")]
     p1=model2.predict([[bloodoxygen,bloodoxygen]])
     #heart beat
@@ -118,14 +118,14 @@ def predict():
         plt.title("HEART BEAT")
     elif(int_features[2]=='BLOOD OXYGEN'):
         xpoints = np.array(df['DATE'][I1:I2])
-        ypoints = np.array(df['BLOOD OXYGEN LEVEL'][I1:I2])
+        ypoints = np.array(df['OXYGEN LEVEL'][I1:I2])
         figure= plt.figure()
         figure.set_figwidth(10)
         figure.set_figheight(10)
         plt.plot(xpoints, ypoints)
         plt.xlabel("Date")
-        plt.ylabel("Blood Oxygen")
-        plt.legend(['Blood Oxygen'])
+        plt.ylabel("Oxygen level")
+        plt.legend(['Oxygen level'])
         plt.title("BLOOD OXYGEN")
     elif(int_features[2]=='BLOOD PRESSURE'):
         xpoints = np.array(df['DATE'][I1:I2])
@@ -160,7 +160,7 @@ def predict():
         xpoints = np.array(df['DATE'][I1:I2])       
         ypoints = np.array(df['HEART BEAT'][I1:I2])        
         xpoints1 = np.array(df['DATE'][I1:I2])
-        ypoints1= np.array(df['BLOOD OXYGEN LEVEL'][I1:I2])
+        ypoints1= np.array(df['OXYGEN LEVEL'][I1:I2])
         xpoints2 = np.array(df['DATE'][I1:I2])
         ypoints2 = np.array(df['SYSTOLIC'][I1:I2])       
         xpoints3 = np.array(df['DATE'][I1:I2])
@@ -174,8 +174,8 @@ def predict():
         axis[0,0].set_title("HEART BEAT")
         axis[0,1].plot(xpoints1, ypoints1)
         axis[0,1].set_xlabel("Date")
-        axis[0,1].set_ylabel("Blood Oxygen")
-        axis[0,1].legend(['Blood Oxygen'])
+        axis[0,1].set_ylabel("Oxygen level")
+        axis[0,1].legend(['Oxygen level'])
         axis[0,1].set_title("BLOOD OXYGEN")
         axis[1,0].plot(xpoints2, ypoints2)        
         axis[1,0].plot(xpoints3, ypoints3)
@@ -451,7 +451,7 @@ def home1():
     diastolic=orgdia[4][:orgdia[4].rfind("\n")] 
     b=model4.predict([[diastolic,diastolic]])
     #blood oxygen
-    orgbo=list(str(df['BLOOD OXYGEN LEVEL'].tail(1)).strip().split(" "))
+    orgbo=list(str(df['OXYGEN LEVEL'].tail(1)).strip().split(" "))
     bloodoxygen=orgbo[4][:orgbo[4].rfind("\n")]
     p1=model2.predict([[bloodoxygen,bloodoxygen]])
     #heart beat
